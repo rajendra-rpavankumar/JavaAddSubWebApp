@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>Servlet Name For Calc</servlet-name>
+    <servlet-class>com.pavan.calc.processServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>Servlet Name For add</servlet-name>
+  <servlet-class>com.pavan.calc.add</servlet-class>
+  </servlet>
+
+  <servlet>
+  <servlet-name>Servlet Name For sub</servlet-name>
+  <servlet-class>com.pavan.calc.subtract</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>Servlet Name For Calc</servlet-name>
+    <url-pattern>/Process/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Servlet Name For add</servlet-name>
+  <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>Servlet Name For sub</servlet-name>
+  <url-pattern>/sub</url-pattern>
+  </servlet-mapping>
+</web-app>
